@@ -14,19 +14,19 @@ body {
     text-align: center;
     font-family: monospace;
     text-transform: uppercase;
-    margin: 40px auto;
+    font-weight: 400;
+    margin: 10px auto;
     font-size: 46px; }
   body .campo {
     width: 600px;
     height: 600px;
-    margin: 0px 25px;
+    margin: 0px auto;
     background-color: #f9f9f9;
+    border-radius: 5px;
     position: relative;
-    border: 2px solid red;
     -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
     -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
-    float: left; }
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25); }
     body .campo .cella {
       width: 12px;
       height: 12px;
@@ -66,12 +66,6 @@ body {
     top: 0;
     left: 0;
     z-index: 1; }
-  body .image {
-    height: 600px;
-    width: 400px;
-    background-color: #cccccc;
-    float: left;
-    margin-left: 25px; }
   body .row:after {
     content: '';
     display: block;

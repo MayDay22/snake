@@ -23,10 +23,6 @@
                         <?php endfor; ?>
                     <?php endfor; ?>
                 </div>
-
-                <div class="image">
-
-                </div>
             
             </div>
         </div>
@@ -34,8 +30,6 @@
         <div class="footer">
             
         </div>
-        
-        
         
         
         <div class="game_pause">

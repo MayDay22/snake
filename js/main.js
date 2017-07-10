@@ -141,22 +141,22 @@ $(document).ready(function () {
     function check_cibo(dir) {
         if ($('.cella[data-x=' + x_testa + '][data-y=' + y_testa + ']').hasClass('food')) {
             if (dir == 'up') {
-                serpente.push([x_testa, y_testa - 1]);
+                serpente.push([x_testa, y_testa + 1]);
                 $('.food').removeClass('food');
                 crea_cibo();
             } 
             if(dir == 'down'){
-                serpente.push([x_testa, y_testa + 1]);
+                serpente.push([x_testa, y_testa - 1]);
                 $('.food').removeClass('food');
                 crea_cibo();
             }
             if(dir == 'left'){
-                serpente.push([x_testa + 1, y_testa]);
+                serpente.push([x_testa - 1, y_testa]);
                 $('.food').removeClass('food');
                 crea_cibo();
             }
             if(dir == 'right'){
-                serpente.push([x_testa - 1, y_testa]);
+                serpente.push([x_testa +1, y_testa]);
                 $('.food').removeClass('food');
                 crea_cibo();
             }

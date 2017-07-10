@@ -2,7 +2,6 @@
 
 $(document).ready(function () {
 
-
     var x_testa = 25;
     var y_testa = 25;
 
@@ -15,10 +14,8 @@ $(document).ready(function () {
         [20, 25],
     ]
 
-
     var direzione = 39;
     var go;
-
 
     crea_cibo();
 
@@ -135,7 +132,8 @@ $(document).ready(function () {
     }
 
     function game_over(){
-        alert('Hao perso!');
+        alert('Hao perso! Premi ok per ricominciare');
+        location.reload();
     }
 
     function check_cibo(dir) {

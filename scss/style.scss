@@ -1,0 +1,117 @@
+html{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    &.active{
+        overflow: hidden;
+    }
+    h1{
+        text-align: center;
+        font-family: monospace;
+        text-transform: uppercase;
+        margin: 40px auto;
+        font-size: 46px;
+    }
+    background-color: #f0f0f0;
+    .campo{
+        width: 600px;
+        height: 600px; 
+        margin: 0px 25px;
+        background-color: #f9f9f9;
+        position: relative;
+        border: 2px solid red;
+        -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25);
+        -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25);
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25);
+        float:left;
+        .cella{
+            width: 12px;
+            height: 12px;
+            float: left;
+            border: 0px solid #f9f9f9;
+        }
+    }
+
+    .game_pause{
+        display: block;
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background-color: red;
+        opacity: .7;
+        top: 15px;
+        right: 15px;
+        border-radius: 50%;
+        border: 10px solid #000000;
+    }
+
+    .segmento_serpente{
+        background: blue; 
+    }
+    
+    &.paused{
+        &:after{
+            content:'Press any key to continue';
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #ffffff;
+            font-size: 46px;
+            font-style: italic;
+            z-index: 2;
+        }
+        &:before{ 
+            content:'';
+            position: fixed;
+            display: inline-block;
+            background-color: rgba(0,0,0,.8);
+            line-height: 100%;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left:0;
+            z-index: 1;
+        }
+    }
+    
+    .image{
+        height: 600px;
+        width: 400px;
+        background-color: #cccccc;
+        float:left;
+        margin-left: 25px;
+    }
+    
+    .row{
+        &:after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+    }
+    
+    .container{
+        padding-bottom: 40px;
+        
+    }
+    
+    .footer{
+        display: block;
+        height: 200px;
+        display: block;
+        background-color: #333333;
+    }
+    
+    .food{ 
+        background-color: orangered;
+        border-radius: 6px !important;
+    }
+    
+}

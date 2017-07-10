@@ -89,7 +89,7 @@ $(document).ready(function () {
 
     function change_direction_up() {
         x_testa = x_testa;
-        y_testa = y_testa - 1;
+        y_testa = y_testa + 1;
         serpente.unshift([x_testa, y_testa]);
         serpente.pop();
         check_cibo('up');
@@ -97,14 +97,14 @@ $(document).ready(function () {
     }
     function change_direction_down() {
         x_testa = x_testa;
-        y_testa = y_testa + 1;
+        y_testa = y_testa - 1;
         serpente.unshift([x_testa, y_testa]);
         serpente.pop();
         check_cibo('down');
         check_sconfitta();
     }
     function change_direction_left() {
-        x_testa = x_testa + 1;
+        x_testa = x_testa - 1;
         y_testa = y_testa;
         serpente.unshift([x_testa, y_testa]);
         serpente.pop();
@@ -112,7 +112,7 @@ $(document).ready(function () {
         check_sconfitta();
     }
     function change_direction_right() {
-        x_testa = x_testa - 1;
+        x_testa = x_testa + 1;
         y_testa = y_testa;
         serpente.unshift([x_testa, y_testa]);
         serpente.pop();
@@ -141,22 +141,22 @@ $(document).ready(function () {
     function check_cibo(dir) {
         if ($('.cella[data-x=' + x_testa + '][data-y=' + y_testa + ']').hasClass('food')) {
             if (dir == 'up') {
-                serpente.push([x_testa, y_testa + 1]);
+                serpente.push([x_testa, y_testa - 1]);
                 $('.food').removeClass('food');
                 crea_cibo();
             } 
             if(dir == 'down'){
-                serpente.push([x_testa, y_testa - 1]);
+                serpente.push([x_testa, y_testa + 1]);
                 $('.food').removeClass('food');
                 crea_cibo();
             }
             if(dir == 'left'){
-                serpente.push([x_testa - 1, y_testa]);
+                serpente.push([x_testa + 1, y_testa]);
                 $('.food').removeClass('food');
                 crea_cibo();
             }
             if(dir == 'right'){
-                serpente.push([x_testa +1, y_testa]);
+                serpente.push([x_testa - 1, y_testa]);
                 $('.food').removeClass('food');
                 crea_cibo();
             }

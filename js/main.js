@@ -132,7 +132,7 @@ $(document).ready(function () {
     }
 
     function game_over(){
-        alert('Hao perso! Premi ok per ricominciare');
+        alert('Hai perso! Premi ok per ricominciare');
         location.reload();
     }
 

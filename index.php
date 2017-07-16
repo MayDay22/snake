@@ -28,7 +28,9 @@
         </div>
         
         <div class="footer">
-            
+            <div id="punteggio">
+                
+            </div>
         </div>
         
         

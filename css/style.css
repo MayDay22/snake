@@ -44,7 +44,8 @@ body {
     border-radius: 50%;
     border: 10px solid #000000; }
   body .segmento_serpente {
-    background: blue; }
+    background: #00cc00;
+    border-radius: 50%; }
   body.paused:after {
     content: 'Press any key to continue';
     position: fixed;
@@ -76,7 +77,19 @@ body {
     display: block;
     height: 200px;
     display: block;
-    background-color: #333333; }
+    background-color: #333333;
+    position: relative; }
   body .food {
     background-color: orangered;
     border-radius: 6px !important; }
+
+#punteggio {
+  font-size: 50px;
+  color: #ffffff;
+  text-align: center;
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%); }

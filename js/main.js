@@ -16,6 +16,7 @@ $(document).ready(function () {
 
     var direzione = 39;
     var go;
+    var punteggio = 0;
 
     crea_cibo();
 
@@ -166,9 +167,15 @@ $(document).ready(function () {
     }
 
     function crea_cibo() {
-        var x = Math.floor((Math.random() * 49) + 1);
-        var y = Math.floor((Math.random() * 49) + 1);
+        aggiorna_punteggio();
+        var x = Math.floor((Math.random() * 47) + 2);
+        var y = Math.floor((Math.random() * 47) + 2);
         $('.cella[data-x=' + x + '][data-y=' + x + ']').addClass('food');
+    }
+    
+    function aggiorna_punteggio(){
+        punteggio = punteggio + 1;
+        $('#punteggio').html(punteggio);
     }
 
     function chkDuplicates(arr, justCheck) {

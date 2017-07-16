@@ -52,8 +52,9 @@ body{
     }
 
     .segmento_serpente{
-        background: blue; 
-    }
+        background: #00cc00; 
+        border-radius: 50%;
+    } 
     
     &.paused{
         &:after{
@@ -100,6 +101,7 @@ body{
         height: 200px;
         display: block;
         background-color: #333333;
+        position: relative;
     }
     
     .food{ 
@@ -107,4 +109,16 @@ body{
         border-radius: 6px !important;
     }
     
+}
+
+#punteggio{
+    font-size: 50px;
+    color: #ffffff;
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
 }

@@ -16,7 +16,7 @@ $(document).ready(function () {
 
     var direzione = 39;
     var go;
-    var punteggio = 0;
+    var punteggio = -1;
 
     crea_cibo();
 
